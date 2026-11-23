@@ -5,3 +5,42 @@
   --muted: #7e7c75;
   --border: #d0cdc7;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Arial, sans-serif;
+}
+
+header {
+  text-align: center;
+}
+
+.image-gallery {
+  width: min(680px, 100%);
+  margin: 24px auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.image-gallery img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+@media (max-width: 560px) {
+  .image-gallery {
+    grid-template-columns: 1fr;
+  }
+}
