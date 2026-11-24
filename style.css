@@ -11,8 +11,8 @@
 }
 
 body {
-  max-width: 960px;
-  margin: 0 auto;
+  max-width: none;
+  margin: 0;
   padding: 24px;
   background: var(--bg);
   color: var(--text);
@@ -46,14 +46,14 @@ header {
 }
 
 .landing {
-  min-height: 360px;
-  width: min(680px, 100%);
-  margin: 24px auto;
+  min-height: 70vh;
+  width: 100%;
+  margin: 24px 0;
   display: grid;
   place-items: center;
   background:
     linear-gradient(rgba(26, 26, 24, 0.25), rgba(26, 26, 24, 0.25)),
-    url("red-headed-woodpecker-01.jpg") center / cover no-repeat;
+    url("redheadedwoodpecker.jpeg") center / cover no-repeat;
   border-radius: 8px;
   text-align: center;
 }
