@@ -283,6 +283,36 @@ header {
   margin-top: 4px;
 }
 
+.give-space {
+  width: min(680px, 100%);
+  margin: 48px auto;
+  padding: clamp(32px, 6vw, 56px);
+  background: #1f3a2d;
+  color: white;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.give-space-kicker {
+  margin: 0 0 8px;
+  color: #d9c9a3;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.give-space h2 {
+  margin: 0;
+  font-size: clamp(2.25rem, 6vw, 4rem);
+}
+
+.give-space p:last-child {
+  margin: 16px auto 0;
+  max-width: 540px;
+  line-height: 1.65;
+}
+
 @media (max-width: 560px) {
   .bird-grid {
     grid-template-columns: 1fr;
