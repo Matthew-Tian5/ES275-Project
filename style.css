@@ -162,3 +162,32 @@ header {
     margin: 0 auto;
   }
 }
+
+.look-up {
+  width: min(680px, 100%);
+  margin: 24px auto;
+  padding: clamp(36px, 7vw, 72px) 24px;
+  text-align: center;
+}
+
+.look-up-kicker {
+  margin: 0 0 8px;
+  color: #7a3d24;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.look-up h2 {
+  margin: 0;
+  font-size: clamp(3rem, 9vw, 6.5rem);
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+}
+
+.look-up p:last-child {
+  margin: 18px 0 0;
+  color: var(--muted);
+  font-size: clamp(1.1rem, 3vw, 1.35rem);
+}
